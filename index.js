@@ -1,4 +1,6 @@
 
+const fetch = require('node-fetch');
+
 const get_url = 'https://www.strava.com/api/v3/athlete/activities'
 const post_url = 'https://www.strava.com/oauth/token?'
 const refreshtoken = '9541e489b6a5ad9382817c70ec1e5d94285b9d0c'
@@ -21,8 +23,7 @@ fetch(post_url, {
 .then(res => res.json())
 .then(json => access_token = json.access_token) 
 
-function print(){
-console.log(access_token)}
+function print() {console.log(access_token)}
 setTimeout(print,3000) 
 
 
