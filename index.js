@@ -1,11 +1,12 @@
 
 const fetch = require('node-fetch');
+require('dotenv').config();
 
-const get_url = 'https://www.strava.com/api/v3/athlete/activities'
-const post_url = 'https://www.strava.com/oauth/token?'
-const refreshtoken = '9541e489b6a5ad9382817c70ec1e5d94285b9d0c'
-const clientid = '46936'
-const clientsecret = 'ba4aef26adc6ff032c0abffdf6ea94e2f5ba3a57';
+const get_url = process.env.get_url
+const post_url = process.env.post_url
+const refreshtoken = process.env.refresh_token
+const clientid = process.env.client_id
+const clientsecret = process.env.client_secret;
 
 var access_token;
 fetch(post_url, {
