@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 
 const get_url = 'https://www.strava.com/api/v3/athlete/activities'
 const post_url = 'https://www.strava.com/oauth/token?'
