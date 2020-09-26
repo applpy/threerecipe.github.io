@@ -1,8 +1,8 @@
 
-/*const { access } = require('fs');
+const { access } = require('fs');
 const { url } = require('inspector');
 const fetch = require('node-fetch');
-require('dotenv').config();*/
+require('dotenv').config();
 
 const get_url = process.env.get_url
 const post_url = process.env.post_url
